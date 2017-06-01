@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Portal Claro",
   "scripts": {
-    "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha --colors --reporter mocha-jenkins-reporter",
-    "mocha":"mocha"
+    "test-jenkins": "/var/lib/jenkins/workspace/teste-mocha/report.xml mocha --colors --reporter mocha-jenkins-reporter",
+    "test": "jenkins-mocha test/*"
   },
   "dependencies": {
-    "gulp": "^3.9.1",    
+    "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
     "mocha-jenkins-reporter": "0.3.8",
     "gulp-sequence": "^0.4.6",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "gulp-jshint": "^1.9.0",
     "gulp-mocha": "^4.3.1",
+    "jenkins-mocha": "^4.1.2",
     "mocha": "^3.4.2"
   }
 }
