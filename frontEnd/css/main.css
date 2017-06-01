@@ -1,0 +1,351 @@
+/*=======================
+ * FONTS AND MOTIONS
+ *=======================*/
+
+@import url('fonts.css');
+@import url('motion.css');
+
+
+/*=======================
+ * DEFINITIONS
+ *=======================*/
+
+* {
+    font-weight: normal;
+    font-size: initial;
+    font-family: 'helvetica-regular';
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    color: #7b7b7b;
+    overflow-x: hidden;
+    background-color: #fff;   
+    margin: 0;
+    padding: 0;
+}
+
+.app a,
+.app div,
+.app button, 
+.app select, 
+.app input {
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0 none;
+}
+
+.app ul, 
+.app p {
+    margin: 0;
+    padding: 0;
+}
+
+.app .main-container a,
+.app .main-container a:hover,
+.app .main-container a:hover,
+.app .main-container button,
+.app .main-container button:hover, 
+.app .main-container tr, 
+.app .main-container tr:hover, 
+.app .main-container input, 
+.app .main-container input:hover,
+.app .main-container select, 
+.app .main-container select:hover,
+.app .acordeon > li.open > .item-acordeon,
+.app .acordeon li h3.title-accordion {
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+.app a:hover,
+.app a:active,
+.app a:focus {
+    background-color: #eee;
+    color: #000;
+}
+
+.app input:active,
+.app input:focus,
+.app select:active,
+.app select:focus, 
+.app .block-form .static:active,
+.app .block-form .static:focus {
+    box-shadow: 0 0 2px 1px #827f7f;
+    border: 1px solid #aba7a7;
+}
+
+
+/*=====================
+ * DEFAULT FONTS
+ *=====================*/
+
+.app h1 {
+    font-size: 26px
+}
+
+.app h2 {
+    font-size: 26px;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.app h3, 
+.app h4, 
+.app h5, 
+.app h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*=====================
+ * BLOCKS
+ *=====================*/
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.table {
+    display: table;
+}
+
+.block {
+    display: block;
+}
+
+
+/*=====================
+ * APP
+ *=====================*/
+
+.app {
+}
+
+
+/*=====================
+ * HEADER
+ *=====================*/
+
+header{
+    margin-bottom: 20px;
+}
+
+header .title{
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header .sub-title{
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*=====================
+ * INPUT
+ *=====================*/
+
+
+.block-input {
+    margin-bottom: 15px
+}
+
+.block-input input {
+    width: 100%;
+    padding: 10px 2%;
+    border-radius: 1px;
+    border: 1px solid #ddd;
+}
+
+
+/*=====================
+ * CONTROL
+ *=====================*/
+
+.control {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+
+/*=====================
+ * SCROLL-UP
+ *=====================*/
+
+.scroll-up {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    color: #FFF;
+    text-align: center;
+    background-color: #A80000;
+    padding: 7px !important;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-up i{
+    line-height: 0;
+    color: #FFF;
+}
+
+.scroll-up:hover,
+.scroll-up:active,
+.scroll-up:focus{
+    background-color: #A80000;
+    color: #A80000;
+}
+
+
+/*=====================
+ * RESPONSIVE
+ *=====================*/
+
+@media (min-width: 1240px) {
+
+}
+
+@media all and ( min-width: 768px ) and ( max-width: 960px ) {
+
+}
+
+@media (min-width: 768px) {
+    /*=====================
+     * GRIDS COM MARGIN
+     *=====================*/
+    
+    .app .grid-col-1 {
+        width: 6.33333%;
+    }
+
+    .app .grid-col-2 {
+        width: 14.66666%;
+    }
+
+    .app .grid-col-3 {
+        width: 23%;
+    }
+
+    .app .grid-col-4 {
+        width: 31.33333%;
+    }
+
+    .app .grid-col-5 {
+        width: 39.66666%;
+    }
+
+    .app .grid-col-6 {
+        width: 48%;
+    }
+
+    .app .grid-col-7 {
+        width: 56.33333%;
+    }
+
+    .app .grid-col-8 {
+        width: 64.66666%;
+    }
+
+    .app .grid-col-9 {
+        width: 73%;
+    }
+
+    .app .grid-col-10 {
+        width: 81.33333%;
+    }
+
+    .app .grid-col-11 {
+        width: 89.66666%;
+    }
+
+    .app .grid-col-12-full {
+        width: 100%;
+    }
+
+
+    /*=====================
+     *  GRIDS SEM MARGENS
+     *=====================*/
+
+    .app .grid-col-1-full {
+        width: 8.33333%;
+    }
+
+    .app .grid-col-2-full {
+        width: 16.66666%;
+    }
+
+    .app .grid-col-3-full {
+        width: 25%;
+    }
+
+    .app .grid-col-4-full {
+        width: 33.33333%;
+    }
+
+    .app .grid-col-5-full {
+        width: 41.66666%;
+    }
+
+    .app .grid-col-6-full {
+        width: 50%;
+    }
+
+    .app .grid-col-7-full {
+        width: 58.33333%;
+    }
+
+    .app .grid-col-8-full {
+        width: 66.66666%;
+    }
+
+    .app .grid-col-9-full {
+        width: 75%;
+    }
+
+    .app .grid-col-10-full {
+        width: 83.33333%;
+    }
+
+    .app .grid-col-11-full {
+        width: 91.66666%;
+    }
+
+    .app .grid-col-12 {
+        width: 100%;
+    }
+
+
+    /*=====================
+     * ESPAÇAMENTOS
+     *=====================*/
+
+    .app .m-right-10 {
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 430px) {
+    
+}

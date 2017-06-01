@@ -1,0 +1,20 @@
+{
+  "name": "portal-claro",
+  "version": "1.0.0",
+  "authors": [
+    "América Móvil"
+  ],
+  "description": "Portal Claro",
+  "keywords": [
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~3.1.1"
+  }
+}
